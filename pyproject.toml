@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "graphblas-demo"
+version = "0.1.0"
+description = "hello world for graph blas"
+authors = ["Pavan Kumar"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.10,<4.0"
+python-graphblas = {extras = ["default"], version = "^2024.2.0"}
+numpy = "1.26.4"
+numba = "^0.60.0"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.10.0"
+ipython = "^8.29.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
